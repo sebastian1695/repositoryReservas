@@ -9,66 +9,112 @@ The project is built with Spring Boot version '2.7.10', it operates with the MAV
 
 
 ## Built With 🛠️
-🌎 java
-🥬 spring
-🪶MAVEN
-🐬MySQL
+🌎 java.
+
+🥬 spring.
+
+🪶MAVEN.
+
+🐬MySQL.
 
 ## Getting Started 🚙
 
 To get a local copy up and running, follow these steps.
-Prerequisites
-JDK 17 https://jdk.java.net/java-se-ri/17
-Maven https://maven.apache.org/install.html
-MySQL https://dev.mysql.com/downloads/installer/
+Prerequisites.
+
+JDK 17 https://jdk.java.net/java-se-ri/17.
+
+Maven https://maven.apache.org/install.html.
+
+MySQL https://dev.mysql.com/downloads/installer/.
+
 
 ## Recommended Tools
-IntelliJ Community https://www.jetbrains.com/idea/download/
-Insomnia https://insomnia.rest/download
+IntelliJ Community https://www.jetbrains.com/idea/download/.
+
+Insomnia https://insomnia.rest/download.
+
 ____________________________________________________________________________________________________
+
 The routes for every services are generated through the following #ENDPOINTS:
+
 ## To create customers quickly with Insomnia: :trackball:	
+
 Request: 
+
 #POST: Localhost:8081/api/v1/clientes
+
 Answer:
-Code: 200 “customers created successfully”
+
+Code: 200 “customers created successfully”.
+
 
 ## To create a customer with Swagger: :clipboard:	
+
 Request:
+
 {
   "apellido": "Perez",
+  
   "cedula": 1015453,
-  "correo": "cs@me.com",
-  "direccion": "otra casa",
-  "edad": 19,
-  "nombre": "Yuli"
+
+
+"correo": "cs@me.com",
+
+"direccion": "otra casa",
+
+"edad": 19,
+
+"nombre": "Yuli"
+
 }
+
 Answer:
+
 200 OK
 
 ## To create a customer through MySQL: 🐬
+
 Request: 
+
 INSERT INTO CLIENTE VALUES (111, 'Rodriguez','ro@a.com', 'cl2-2', 27,'Sebastian') 
+
 Answer: 
+
 ok
 
+
 ## To create rooms using MySQL :bellhop_bell:	
+
 INSERT INTO HABITACION VALUES (1,10000,'estandar');
+
 INSERT INTO HABITACION VALUES (2,10000,'estandar');
+
 INSERT INTO HABITACION VALUES (3,10000,'estandar');
+
 INSERT INTO HABITACION VALUES (4,10000,'estandar');
+
 INSERT INTO HABITACION VALUES (5,10000,'estandar');
+
 INSERT INTO HABITACION VALUES (6, 20000, 'premium');
+
 INSERT INTO HABITACION VALUES (7, 20000, 'premium');
+
 INSERT INTO HABITACION VALUES (8, 20000, 'premium');
+
 INSERT INTO HABITACION VALUES (9, 20000, 'premium');
+
 INSERT INTO HABITACION VALUES (10, 20000, 'premium');
 
 
 ## To book using insomnia: :trackball: 
+
 localhost:8081/api/v1/cliente/111/habitacion/2/fecha/2023-05-20/reservar
+
 Answer:
+
 200 OK
+
 ## To find a book using SQL: 📆
 
 select  * from habitacion h
