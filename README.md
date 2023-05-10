@@ -1,4 +1,4 @@
-# Booking Service :hotel:
+# Booking Service :hotel: Downtown-Inn
 We have developed a REST API 🖥️ in order to create a service to book a room for a customer 🛎️. The customer must create an account to successfully book a room 📖. To create an account, the user must fill in personal information such as name, ID, email, and so on 📋. In addition, the customer must choose between a premium 🌟 or standard room ⭐. The customer can also search for room availability and price. 📆 💵 The price depends on the type of room the customer wants to stay in. On the one hand, there are standard rooms that cost 10000 per night 🌃, on the other hand, a premium room costs 20000, but customers can receive a 5% discount if they choose to stay in a standard room and provided that the customer exists in the database and the date is available.
 
 
